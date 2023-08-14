@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Video Gallery</div>
+            <div class="video-container">
+                <div class="video">
+                    <video src="Source/NEVER GIVE UP on YOUR LIFE! (Life Changing Motivational Video).mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Agar Tum Saath Ho FULL AUDIO Song _ Tamasha _ Ranbir Kapoor, Deepika Padukone _ T-Series.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/BANARAS – BELAKINA KAVITHE _ ZAID KHAN _ SONAL MONTEIRO _ JAYATHIRTHA _ B. AJANEESH LOKNATH.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Dil Jaaniye Full Song _ Khandaani Shafakhana _ Sonakshi Sinha _ Jubin Nautiyal _ Payal Dev_ New Song.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/JOY STORY - 3 min OSCAR Nominated animated movie.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Last Benchu Party - Video Song _ Kirik Party _ B. Ajaneesh Loknath _ Rakshit Shetty _ Rishab Shetty.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/TRY IT For 21 Days to Change Your LIFE _ Motivational Video In Hindi.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Motivational Speech in Kannada_Success life Kannada_Kannada Motivation.mp4" muted></video>
+                </div>
+
+
+                <div class="video">
+                    <video src="Source/LOVE 360 _ Jagave Neenu I Video Song _ Sid Sriram _ Praveen _ Rachana Inder _ Arjun Janya _ Shashank.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Zero Made In India - Torture Song Making _ Putani Puntru Madhusudhan _ New Kannada Movie.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Motivational Speech in Kannada_Success life Kannada_Kannada Motivation.mp4" muted></video>
+                </div>
+
+                <div class="video">
+                    <video src="Source/Snack Attack.mp4" muted></video>
+                </div>
+
+
+            </div>
+        </div>
+
+<script>
+        var video=document.querySelectorAll('video')
+            video.forEach(play => play.addEventListener('click',()=>{
+                play.classList.toggle('active');
+
+                if(play.pause){
+                    play.play();
+                }
+                else{
+                    play.pause();
+                    play.currentTime = 0;
+                }
+            }));
+</script>
+    
+</body>
+</html>
